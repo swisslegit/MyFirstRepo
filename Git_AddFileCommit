@@ -1,0 +1,35 @@
+<#
+Add-File
+#>
+
+cd "C:\GitHub\Repos\MyFirstRepo"
+
+New-Item myfile.txt | Set-Content -Value "This is some text"
+
+
+<#
+The prompt has changed to a green +1 to indicate there is one changed staged. It also tells that:
+
+Location is on branch master
+There are no commits
+One new file is ready to be committed
+#>
+git add .
+
+
+git status
+
+
+
+<#
+The nano editor does not play well with the ISE, and leaving out -m will likely require that you close and re-launch the ISE. The nano editor works in the CLI, but may be difficult for you to use if you're unfamiliar.
+#>
+git commit -m "my first commit" #m for message
+
+<#
+check log - git
+#>
+
+git log
+
+
